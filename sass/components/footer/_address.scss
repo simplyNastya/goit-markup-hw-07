@@ -15,22 +15,22 @@
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .address-list__address-link {
-    color: var(--address-color);
+    color: $address-color;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1;
 
         &:hover,
         &:focus {
-            color: var(--white-color);
+            color: $white-color;
         }
 }
 

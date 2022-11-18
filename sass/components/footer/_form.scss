@@ -5,7 +5,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .footer-form__btn-group {
@@ -36,7 +36,7 @@
             display: flex;
             align-items: center;
     
-            color: var(--white-color);
+            color: $white-color;
         }
 }
 

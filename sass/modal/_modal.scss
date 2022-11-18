@@ -9,7 +9,7 @@
 
     padding: 40px;
 
-    background-color: var(--white-color);
+    background-color: $white-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
 }
@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: var(--white-color);
+    background-color: $white-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
@@ -39,7 +39,7 @@
 
         &:hover,
         &:focus {
-            fill: var(--accent);
+            fill: $accent;
         }
 }
 
@@ -83,7 +83,7 @@
 
         &:hover,
         &:focus {
-            outline: 1px solid var(--accent);
+            outline: 1px solid $accent;
             border-radius: 4px;
         }
 }
@@ -99,6 +99,6 @@
 
         .modal-form__field:focus+&,
         .modal-form__field:hover+& {
-            fill: var(--accent);
+            fill: $accent;
         }
 }
