@@ -1,0 +1,18 @@
+.logo {
+    @extend %link;
+
+    color: $accent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+
+    &--dark {
+        margin-right: 93px;
+
+        color: $black-color;
+    }
+
+    &--light {
+        color: $white-color;
+    }
+}

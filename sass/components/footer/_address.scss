@@ -1,4 +1,8 @@
-.address-list__item {
+.address__list {
+    @extend %list;
+}
+
+.address__item {
     display: block;
     margin-bottom: 9px;
 
@@ -7,7 +11,9 @@
         }
 }
 
-.address-list__street-link {
+.address__street-link {
+    @extend %link;
+
     display: block;
 
     margin-top: 20px;
@@ -19,6 +25,8 @@
 }
 
 .address-list__address-link {
+    @extend %link;
+    
     color: $address-color;
     font-style: normal;
     font-size: 14px;
@@ -26,7 +34,7 @@
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {

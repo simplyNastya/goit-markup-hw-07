@@ -5,6 +5,8 @@
 }
 
 .header__container {
+    @extend %container;
+    
     display: flex;
     align-items: center;
 }
@@ -17,10 +19,14 @@
 }
 
 .navigation__list {
+    @extend %list;
+
     display: flex;
 }
 
 .navigation__link {
+    @extend %link;
+
     display: flex;
     align-items: center;
 
@@ -62,6 +68,8 @@
 }
 
 .header-contact__list {
+    @extend %list;
+
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -78,6 +86,8 @@
 }
 
 .header-contact__link {
+    @extend %link;
+
     display: flex;
     align-items: center;
 

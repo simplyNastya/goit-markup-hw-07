@@ -3,7 +3,13 @@
     padding-bottom: 94px;
 }
 
+.portfolio-container {
+    @extend %container;
+}
+
 .portfolio-section__filtr-list {
+    @extend %list;
+
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -18,7 +24,7 @@
 }
 
 .portfolio-section__filtr-button {
-    background-color: var(--third-section-and-portfoliobtn-background);
+    background-color: $third-section-and-portfoliobtn-background;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -39,12 +45,16 @@
 }
 
 .portfolio-section__examples-list {
+    @extend %list;
+
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .portfolio-section__examples-link {
+    @extend %link;
+
     display: block;
 
     transition-property: box-shadow;
@@ -80,7 +90,7 @@
     font-size: 18px;
     line-height: 1.55;
 
-    color: var(--white-color);
+    color: $white-color;
     background-color: rgba(33, 150, 243, 0.9);
 
     opacity: 0;

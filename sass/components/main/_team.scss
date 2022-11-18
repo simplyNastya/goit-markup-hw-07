@@ -4,7 +4,13 @@
     padding-bottom: 94px;
 }
 
+.team-container {
+    @extend %container;
+}
+
 .team-card__list {
+    @extend %list;
+
     display: flex;
     gap: 30px;
 }
@@ -37,6 +43,7 @@
 }
 
 .team-card__socials-list {
+    @extend %list;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +57,7 @@
 }
 
 .team-card__socials-link {
+    @extend %link;
     width: 44px;
     height: 44px;
     

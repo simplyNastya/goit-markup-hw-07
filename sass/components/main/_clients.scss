@@ -3,7 +3,13 @@
     padding-bottom: 94px;
 }
 
+.clients-container {
+    @extend %container;
+}
+
 .clients-section__list {
+    @extend %list;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +23,8 @@
 }
 
 .clients-section__link {
+    @extend %link;
+    
     display: flex;
     justify-content: center;
     align-items: center;

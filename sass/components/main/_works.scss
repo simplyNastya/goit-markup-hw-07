@@ -2,7 +2,13 @@
     padding-bottom: 94px;
 }
 
+.works-container {
+    @extend %container;
+}
+
 .works-section__list {
+    @extend %list;
+    
     display: flex;
     gap: 30px;
 }

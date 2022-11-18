@@ -6,6 +6,8 @@
 }
 
 .footer__container {
+    @extend %container;
+    
     display: flex;
     align-items: baseline;
 }
