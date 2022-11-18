@@ -1,0 +1,49 @@
+.features-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-section__list {
+    display: flex;
+    gap: 30px;
+}
+
+.features-section__item {
+    width: 270px;
+}
+
+.features-section__wrapper-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--third-section-and-portfoliobtn-background);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+}
+
+.features-section__icon {
+    width: 70px;
+    height: 70px;
+
+    display: block;
+}
+
+.features-section__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.features-section__text {
+    color: var(--additional-font-color);
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 10px;
+    margin-bottom: 0;
+}

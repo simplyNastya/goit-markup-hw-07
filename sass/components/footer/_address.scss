@@ -1,0 +1,36 @@
+.address-list__item {
+    display: block;
+    margin-bottom: 9px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+}
+
+.address-list__street-link {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    color: var(--white-color);
+}
+
+.address-list__address-link {
+    color: var(--address-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--white-color);
+        }
+}
+
