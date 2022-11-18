@@ -15,7 +15,7 @@ img {
   padding: 0;
 }
 
-.portfolio-section__examples-link, .footer-socials__link, .address-list__address-link, .address__street-link, .clients-section__link, .team-card__socials-link, .logo, .header-contact__link, .navigation__link {
+.portfolio-section__examples-link, .footer-socials__link, .address__address-link, .address__street-link, .clients-section__link, .team-card__socials-link, .logo, .header-contact__link, .navigation__link {
   color: #212121;
   text-decoration: none;
 }
@@ -559,7 +559,7 @@ img {
   color: #FFFFFF;
 }
 
-.address-list__address-link {
+.address__address-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
@@ -571,7 +571,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-list__address-link:hover, .address-list__address-link:focus {
+.address__address-link:hover, .address__address-link:focus {
   color: #FFFFFF;
 }
 

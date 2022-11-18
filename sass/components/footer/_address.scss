@@ -24,7 +24,7 @@
     color: $white-color;
 }
 
-.address-list__address-link {
+.address__address-link {
     @extend %link;
     
     color: $address-color;
