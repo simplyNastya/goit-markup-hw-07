@@ -10,10 +10,10 @@
 .portfolio-section__filtr-list {
     @extend %list;
 
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+    @include centered ($vertical:null);
 
+    margin-bottom: 50px;
+    
         &:first-child {
             padding: 6px 25px;
         }
@@ -35,8 +35,9 @@
     border-radius: 4px;
     border: 0;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    @include transition (background-color);
+    @include transition (color);
+    
         &:hover,
         &:focus {
             background-color: $accent;
@@ -57,9 +58,7 @@
 
     display: block;
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (box-shadow);
 
         &:hover,
         &:focus {
@@ -95,9 +94,7 @@
 
     opacity: 0;
 
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (transform);
 
         .portfolio-section__examples-item:hover & {
             opacity: 1;

@@ -6,9 +6,8 @@
 
 .header__container {
     @extend %container;
-    
-    display: flex;
-    align-items: center;
+
+    @include centered ($horizontal:null);
 }
 
 .navigation {
@@ -27,15 +26,12 @@
 .navigation__link {
     @extend %link;
 
-    display: flex;
-    align-items: center;
+    @include centered ($horizontal:null);
 
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (color); 
 
         &:hover,
         &:focus {
@@ -67,17 +63,16 @@
         }
 }
 
-.header-contact__list {
+.header-contact {
     @extend %list;
 
-    display: flex;
-    align-items: center;
+    @include centered ($horizontal:null);
+
     margin-left: auto;
 }
 
 .header-contact__item {
-    display: flex;
-    align-items: center;
+    @include centered ($horizontal:null);
     gap: 10px;
 }
 
@@ -88,17 +83,14 @@
 .header-contact__link {
     @extend %link;
 
-    display: flex;
-    align-items: center;
+    @include centered($horizontal:null);
 
     color: $additional-font-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (color);
 
         &:hover,
         &:focus {
@@ -110,17 +102,13 @@
     fill: $additional-font-color;
     margin-right: 10px;
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (fill);
 
         .header-contact__link:hover &,
         .header-contact__link:focus & {
             fill: $accent;
-    
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            @include transition (fill);
         }
 }
 

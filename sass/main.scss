@@ -1,5 +1,7 @@
-@import './vars';
-@import './base';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/base';
 @import './components/header/header';
 @import './components/common/logo';
 @import './components/main/hero';
@@ -7,11 +9,11 @@
 @import './components/main/works';
 @import './components/main/team';
 @import './components/main/clients';
+@import './components/portfolio/portfolio';
 @import './components/footer/footer';
 @import './components/footer/address';
 @import './components/footer/footer-socials';
 @import './components/footer/form';
-@import './components/portfolio/portfolio';
 @import './modal/backdrop';
 @import './modal/modal';
 @import './modal/form';

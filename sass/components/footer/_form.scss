@@ -9,8 +9,7 @@
 }
 
 .footer-form__btn-group {
-    display: flex;
-    align-items: center;
+    @include centered ($horizontal:null);
     gap: 12px;
 
     margin-top: 20px;
@@ -32,9 +31,8 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 1.25;
-    
-            display: flex;
-            align-items: center;
+
+            @include centered ($horizontal: null);
     
             color: $white-color;
         }

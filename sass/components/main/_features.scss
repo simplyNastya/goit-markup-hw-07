@@ -19,9 +19,7 @@
 }
 
 .features-section__wrapper-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered ();
 
     width: 270px;
     height: 120px;

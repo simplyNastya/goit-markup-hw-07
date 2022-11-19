@@ -1,4 +1,4 @@
-.footer-socials__wrapper {
+.footer-socials {
     margin-left: 70px;
     margin-right: 93px;
 }
@@ -17,16 +17,13 @@
 .footer-socials__list {
     @extend %list; 
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered ();
+
     gap: 10px;
 }
 
 .footer-socials__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered ();
 }
 
 .footer-socials__link {
@@ -39,11 +36,11 @@
     border-radius: 50%;
     color: $white-color;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered ();
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (background-color);
+    @include transition (border-radius);
+    @include transition (color);
 
         &:hover,
         &:focus {
@@ -59,10 +56,8 @@
 
     fill: $white-color;
 
-    transition: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    @include transition (fill);
+    
         .footer-socials__link:hover & {
             fill: $white-color;
         }
